@@ -11,7 +11,7 @@ def send_mot():
     url_of_motivation = "https://favqs.com/api/qotd"
     result= requests.get(url_of_motivation).json()
     return cat, result
-
+print("5555")
 @bot.message_handler(commands= ["help", "start"])
 def send_message(message):
     bot.send_message(message.chat.id, "th", reply_markup=keyboard1)
